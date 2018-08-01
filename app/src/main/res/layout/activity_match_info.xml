@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+
+
+    tools:context="com.example.bkbiswas.scoringrunrate.MatchInfo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MATCH   INFO:"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:layout_marginLeft="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="55sp"
+        android:layout_marginRight="20sp"
+        >
+
+        <TextView
+            android:text="Team 1:"
+            android:textSize="15sp"
+            android:textColor="#eae1e1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_weight="4"/>
+
+        <EditText
+            android:id="@+id/team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#eae1e1"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="25sp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5sp"
+            android:backgroundTint="#f5eeee"
+            android:textAlignment="center"
+            android:hint="Name of Team 1"
+            android:textColorHint="#483c3c"
+            android:textSize="15sp"
+            android:singleLine="true"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="55sp"
+        android:layout_marginRight="20sp"
+        >
+
+        <TextView
+            android:text="Team 2:"
+            android:textSize="15sp"
+            android:textColor="#eae1e1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_weight="4"/>
+
+        <EditText
+            android:id="@+id/team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#eae1e1"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="25sp"
+            android:layout_weight="1"
+            android:hint="Name of Team 2"
+            android:textColorHint="#483c3c"
+            android:layout_marginBottom="5sp"
+            android:backgroundTint="#f5eeee"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="55sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="No of  OVERS  per innings:"
+            android:textSize="15sp"
+            android:textColor="#eae1e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:width="190sp"
+            />
+
+        <EditText
+            android:id="@+id/noofover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#eae1e1"
+            android:layout_marginLeft="7sp"
+            android:layout_marginRight="25sp"
+            android:hint="10"
+            android:textColorHint="#483c3c"
+            android:layout_marginBottom="5sp"
+            android:backgroundTint="#f5eeee"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:layout_weight="3"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="55sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="No of  PLAYERS  per innings:"
+            android:textSize="15sp"
+            android:textColor="#eae1e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:width="190sp"
+            />
+
+        <EditText
+            android:id="@+id/noofwicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#eae1e1"
+            android:layout_marginLeft="7sp"
+            android:layout_marginRight="25sp"
+            android:hint="11"
+            android:textColorHint="#483c3c"
+            android:layout_marginBottom="5sp"
+            android:backgroundTint="#f5eeee"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:layout_weight="3"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="55sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Batting First:"
+            android:textSize="15sp"
+            android:textColor="#eae1e1"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            />
+
+        <Spinner
+            android:id="@+id/battingFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="25sp"
+            android:backgroundTint="#f9f6f6"
+            android:popupBackground="#fdfcfc"
+            android:textAlignment="center"
+            ></Spinner>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Openers' Name"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:layout_marginTop="30sp"
+            android:textAlignment="center"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Strike:"
+            android:textColor="#FFF"
+            android:textSize="13sp"
+            android:layout_marginLeft="55sp"
+            android:width="100sp"
+            android:layout_marginTop="5sp"
+            />
+
+        <EditText
+            android:id="@+id/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="190sp"
+            android:backgroundTint="#FFF"
+            android:hint="Player 1"
+            android:textColorHint="#483c3c"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:textColor="#FFF"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100sp"
+            android:text="Non Strike:"
+            android:textColor="#FFF"
+            android:textSize="13sp"
+            android:layout_marginLeft="55sp"
+            android:layout_marginTop="5sp"
+            />
+
+        <EditText
+            android:id="@+id/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFF"
+            android:hint="Player 2"
+            android:width="190sp"
+            android:textColorHint="#483c3c"
+            android:textSize="15sp"
+            android:textColor="#FFF"
+            android:textAlignment="center"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="30sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:text="Start   Scoring"
+        android:textColorHighlight="#eef746"
+        android:background="@drawable/border2"
+        />
+
+</LinearLayout>
